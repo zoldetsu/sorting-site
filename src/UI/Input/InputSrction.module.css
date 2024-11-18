@@ -1,0 +1,13 @@
+.MyInput {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid seagreen;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+.MyInputSearch{
+    margin-bottom: 10px;
+    
+}

@@ -1,0 +1,30 @@
+
+.header {
+    margin-bottom: 10px;
+    height: 55px;
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #4e4e4e;
+    background: #ffffff;
+}
+
+
+.img-icon {
+    width: 25px;
+    height: 25px;
+    
+}
+
+.text-logo {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.icons-select {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
