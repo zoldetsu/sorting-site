@@ -1,6 +1,6 @@
 import InputSection from "../UI/Input/InputSection";
 import MySelect from "../UI/Select/MySelect";
-
+import "../Styles/App.css";
 export default function PostFilter({ filter, setFilter }: any) {
   return (
     <div>
@@ -13,6 +13,7 @@ export default function PostFilter({ filter, setFilter }: any) {
       />
 
       <MySelect
+        className={"select"}
         value={filter.sort}
         onChange={(selectedSort: any) =>
           setFilter({ ...filter, sort: selectedSort })

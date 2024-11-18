@@ -4,7 +4,7 @@
     color: teal;
     font-size: 14px;
     background: transparent;
-    border: 3px  solid teal;
+    border: 3px  solid rgb(0, 45, 128);
     border-radius: 5px;
     cursor: pointer;
 }

@@ -1,3 +1,5 @@
+import "../../Styles/App.css";
+
 export default function MySelect({
   options,
   defaultValue,
@@ -5,7 +7,11 @@ export default function MySelect({
   value,
 }: any) {
   return (
-    <select value={value} onChange={(event) => onChange(event.target.value)}>
+    <select
+      className={"select"}
+      value={value}
+      onChange={(event) => onChange(event.target.value)}
+    >
       <option disabled={true} value="">
         {defaultValue}
       </option>
