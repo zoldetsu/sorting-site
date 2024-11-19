@@ -6,10 +6,10 @@ export default function PostItem(props: any) {
   return (
     <div className="post">
       <div className="post__content">
-        <strong>
+        <strong className="post__title">
           {props.posts.id} {props.posts.title}
         </strong>
-        <div>{props.posts.body}</div>
+        <div className="post__body">{props.posts.body}</div>
       </div>
       <div style={{ display: "flex" }}>
         <div className="post__btns">

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useFetching } from "../hooks/useFetching";
 import PostService from "../API/PostService";
 import MuLoader from "../UI/Loader/MyLoader";
-
+import "../Styles/PostIdPageStyle.css";
 export default function PostIdPage() {
   const params = useParams();
   const [post, setPost] = useState({});
@@ -25,27 +25,28 @@ export default function PostIdPage() {
   }, []);
 
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
-      <h1> Вы попали на страницу поста c ID = {params.id}</h1>
+    <div className={"post__page_wrapper"}>
+      <h1 className={"post__page_title"}>
+        {" "}
+        Вы попали на страницу поста c ID = {params.id}
+      </h1>
 
       {isLoading ? (
         <MuLoader />
       ) : (
-        <div>
+        <div className={"post__page_body_title"}>
           {post.id},.. {post.title}
         </div>
       )}
-      <h1 style={{ marginTop: "15px" }}>Комментарии</h1>
+      <h3 style={{ marginTop: "15px" }}>Комментарии</h3>
       {isComLoading ? (
         <MuLoader />
       ) : (
-        <div style={{ marginTop: "15px" }}>
+        <div className={"post__comment-wrapper"} style={{ marginTop: "15px" }}>
           {comments.map((comment) => (
-            <div style={{ marginTop: "10px" }}>
-              <h5>{comment.email}</h5>
-              <div>{comment.body}</div>
+            <div className={"post__comment-item"}>
+              <h5 className={"comment__email"}>{comment.email}</h5>
+              <div className={"comment__body"}>{comment.body}</div>
             </div>
           ))}
         </div>

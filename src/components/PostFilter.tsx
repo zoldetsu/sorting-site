@@ -13,7 +13,7 @@ export default function PostFilter({ filter, setFilter }: any) {
       />
 
       <MySelect
-        className={"select"}
+        
         value={filter.sort}
         onChange={(selectedSort: any) =>
           setFilter({ ...filter, sort: selectedSort })

@@ -7,8 +7,12 @@
 
 ### Скрин главной страницы
 
-![alt text](image-1.png)
+![alt text](image-3.png)
 
 ### выбор сортировки
 
 ![alt text](image-2.png)
+
+### фулл пост
+
+![alt text](image-4.png)
